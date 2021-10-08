@@ -12,8 +12,25 @@
         <module>wanner-commons</module>
         <module>wanner-northbound-service</module>
         <module>wanner-southbound-service</module>
-        <module>wanner-eureka</module>
+        <module>wanner-integration-test</module>
     </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <springboot.version>2.5.5</springboot.version>
+        <junit.version>5.7.0</junit.version>
+        <springdata.mongo.version>3.2.5</springdata.mongo.version>
+        <springdata.jdbc.version>2.2.5</springdata.jdbc.version>
+        <springdata.elasticsearch.version>4.2.5</springdata.elasticsearch.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
