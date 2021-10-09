@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: southbound-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.2.19:8848
+      username: nacos
+      password: nacos
+  profiles:
+    active: dev
+server:
+  port: 8080
