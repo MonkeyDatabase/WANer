@@ -11,6 +11,8 @@ spring:
     active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    time-zone: Asia/Shanghai
 server:
   port: 9090
 mybatis:

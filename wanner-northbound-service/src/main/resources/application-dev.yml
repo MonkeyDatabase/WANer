@@ -2,7 +2,7 @@ spring:
   datasource:
     username: monkey
     password: 123456
-    url: jdbc:mysql://192.168.2.16:3306/sdwan_controller?useUnicode=true
+    url: jdbc:mysql://192.168.2.16:3306/sdwan_controller?useUnicode=true&serverTimezone=Asia/Shanghai
   cloud:
     nacos:
       discovery:
