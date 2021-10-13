@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class OpsUserController {
-    @Autowired
-    OpsUserService opsUserService;
+
+    final OpsUserService opsUserService;
+
+    public OpsUserController(OpsUserService opsUserService) {
+        this.opsUserService = opsUserService;
+    }
 
     @GetMapping("/user/{id}")
     @ResponseBody
