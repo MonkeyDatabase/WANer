@@ -13,6 +13,8 @@
         <module>wanner-northbound-service</module>
         <module>wanner-southbound-service</module>
         <module>wanner-integration-test</module>
+        <module>wanner-employee-account-service</module>
+        <module>wanner-pop-account-service</module>
     </modules>
 
     <properties>
@@ -21,6 +23,8 @@
         <spring.cloud.version>Hoxton.SR9</spring.cloud.version>
         <spring.cloud.alibaba.version>2.2.6.RELEASE</spring.cloud.alibaba.version>
         <junit.version>4.13.1</junit.version>
+        <shiro.version>1.7.0</shiro.version>
+        <mysql-connector.version>8.0.20</mysql-connector.version>
     </properties>
 
     <dependencyManagement>
@@ -57,6 +61,20 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+
+            <!-- shiro -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+
+            <!-- mysql connector -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector.version}</version>
             </dependency>
 
         </dependencies>

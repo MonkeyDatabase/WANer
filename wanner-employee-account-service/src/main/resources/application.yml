@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: employee-account
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.26:3306/shiro-test
+    username: monkey
+    password: 123456
