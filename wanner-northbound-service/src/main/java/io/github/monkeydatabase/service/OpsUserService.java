@@ -2,7 +2,6 @@ package io.github.monkeydatabase.service;
 
 import io.github.monkeydatabase.billing.dao.OpsUserDAO;
 import io.github.monkeydatabase.billing.domain.OpsUserDO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
