@@ -1,4 +1,4 @@
-package io.github.monkeydatabase.dao;
+package io.github.monkeydatabase.billing.domain;
 
 import lombok.Data;
 
@@ -9,32 +9,34 @@ public class OpsUserDO {
     /**
      * 运维人员ID
      */
+
     Long id;
 
     /**
      * 所属公司ID
      */
-    Long company_id;
+    Long companyId;
 
     /**
      * 所属分支ID
      */
-    Long branch_id;
+    Long branchId;
 
     /**
      * 所属站点ID
      */
-    Long site_id;
+    Long siteId;
 
     /**
      * 运维人员姓名
      */
-    String username;
+
+    String userName;
 
     /**
      * 是否是所属机构的管理员
      */
-    Boolean is_admin;
+    Boolean isAdmin;
 
     /**
      * 运维人员邮箱
@@ -49,17 +51,17 @@ public class OpsUserDO {
     /**
      * 运维人员职位
      */
-    String job_title;
+    String jobTitle;
 
     /**
      * 运维人员手机号
      */
-    String phone_number;
+    String phoneNumber;
 
     /**
      * 是否订阅新产品广告信息，通过邮件下发
      */
-    Boolean ads_accepted;
+    Boolean adsAccepted;
 
     /**
      * 保留字段
@@ -69,6 +71,10 @@ public class OpsUserDO {
     /**
      * 创建时间
      */
-    LocalDateTime create_time;
+    LocalDateTime createTime;
 
+    /**
+     * 修改时间
+     */
+    LocalDateTime modifiedTime;
 }

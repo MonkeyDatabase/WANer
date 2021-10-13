@@ -15,11 +15,4 @@ public class SouthboundApplication {
         SpringApplication.run(SouthboundApplication.class, args);
     }
 
-    @RestController
-    class EchoController{
-        @GetMapping("/echo/{string}")
-        public String echo(@PathVariable String string) {
-            return string;
-        }
-    }
 }

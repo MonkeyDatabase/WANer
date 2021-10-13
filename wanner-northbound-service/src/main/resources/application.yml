@@ -9,5 +9,10 @@ spring:
       password: nacos
   profiles:
     active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 9090
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
