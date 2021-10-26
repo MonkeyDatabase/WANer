@@ -1,0 +1,12 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      # 配置动态路由，服务到 Nacos 上找
+      discovery:
+        locator:
+          enabled: true

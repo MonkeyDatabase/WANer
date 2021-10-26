@@ -15,6 +15,7 @@
         <module>wanner-integration-test</module>
         <module>wanner-employee-account-service</module>
         <module>wanner-pop-account-service</module>
+        <module>wanner-gateway</module>
     </modules>
 
     <properties>

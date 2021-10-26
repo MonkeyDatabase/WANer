@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: southbound_service_route  # 路由ID
+          uri: lb://southbound-service
+          predicates:
+            - Path=/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*), /$\{segment}
