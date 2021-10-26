@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  mariadb:
+    image: mariadb:10.6.4
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MARIADB_DATABASE: sdwan_controller
+    ports:
+      - '3306:3306'
+
+  mariadb-adminer:
+    image: adminer
+    ports:
+      - '9001:8080'
