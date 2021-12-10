@@ -2,8 +2,14 @@ spring:
   datasource:
     username: monkey
     password: 123456
-    url: jdbc:mysql://192.168.2.16:3306/sdwan_controller?useUnicode=true&serverTimezone=Asia/Shanghai
-  cloud:
-    nacos:
-      discovery:
-        namespace: 1831d545-4c1a-492b-b473-128b7207379d
+    url: jdbc:mysql://127.0.0.1:3306/sdwan_controller?useUnicode=true&serverTimezone=Asia/Shanghai
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  security:
+    logintype: JSON
+#  cloud:
+#    nacos:
+#      discovery:
+#        namespace: 1831d545-4c1a-492b-b473-128b7207379d

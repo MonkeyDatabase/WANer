@@ -1,4 +1,4 @@
-package io.github.monkeydatabase.billing.domain;
+package io.github.monkeydatabase.northoperator.domain;
 
 import lombok.Data;
 
@@ -7,74 +7,57 @@ import java.time.LocalDateTime;
 @Data
 public class OpsUserDO {
     /**
-     * 运维人员ID
+     * 运维用户ID
      */
-
     Long id;
-
     /**
      * 所属公司ID
      */
-    Long companyId;
-
+    Long company_id;
     /**
      * 所属分支ID
      */
-    Long branchId;
-
+    Long branch_id;
     /**
      * 所属站点ID
      */
-    Long siteId;
-
+    Long site_id;
     /**
      * 运维人员姓名
      */
-
-    String userName;
-
-    /**
-     * 是否是所属机构的管理员
-     */
-    Boolean isAdmin;
-
+    String username;
     /**
      * 运维人员邮箱
      */
     String email;
-
     /**
      * 运维人员密码
      */
     String password;
-
     /**
      * 运维人员职位
      */
-    String jobTitle;
-
+    String job_title;
     /**
      * 运维人员手机号
      */
-    String phoneNumber;
-
+    String phone_number;
     /**
      * 是否订阅新产品广告信息，通过邮件下发
      */
-    Boolean adsAccepted;
-
+    Boolean ads_accepted;
+    /**
+     * 启用状态 0表示禁用 1表示启用
+     */
+    Integer status;
     /**
      * 保留字段
      */
     String extra;
-
     /**
      * 创建时间
      */
-    LocalDateTime createTime;
+    LocalDateTime create_time;
 
-    /**
-     * 修改时间
-     */
-    LocalDateTime modifiedTime;
+
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>login</title>
+        <script src="https://cdn.staticfile.org/jquery/1.12.3/jquery.min.js"></script>
+    </head>
+    <body>
+    <h1> System login</h1>
+    <form action="/login" method="post">
+        <span>username</span><input type="text" name="username" id="username" />
+        <span>password</span><input type="password" name="password" id="password" />
+        <input type="button" onclick="login()" value="Login">
+    </form>
+
+    <script type="text/javascript">
+        function login() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            if(username === "" || password === "") {
+                alert('username and password can not be null');
+                return;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/login",
+                data: {
+                    "username": username,
+                    "password": password
+                },
+                success: function (json) {
+                    if(json.isok) {
+                        location.href = '/';
+                    } else {
+                        alert(json.message);
+                        location.href = '/login-page'
+                    }
+                },
+                error: function (e) {
+
+                }
+            });
+        }
+    </script>
+    </body>
+</html>

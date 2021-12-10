@@ -1,12 +1,12 @@
 spring:
   application:
     name: northbound-service
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 192.168.2.16:8848
-      username: nacos
-      password: nacos
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.2.16:8848
+#      username: nacos
+#      password: nacos
   profiles:
     active: dev
   datasource:

@@ -1,7 +1,7 @@
 package io.github.monkeydatabase.service;
 
-import io.github.monkeydatabase.billing.dao.OpsUserDAO;
-import io.github.monkeydatabase.billing.domain.OpsUserDO;
+import io.github.monkeydatabase.northoperator.dao.OpsUserDAO;
+import io.github.monkeydatabase.northoperator.domain.OpsUserDO;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,6 +13,6 @@ public class OpsUserService {
     }
 
     public OpsUserDO getUser(Integer id) {
-        return opsUserDAO.getUser(id);
+        return opsUserDAO.getUserById(id);
     }
 }
